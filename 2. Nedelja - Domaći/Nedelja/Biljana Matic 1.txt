@@ -1,0 +1,20 @@
+SELECT * FROM city WHERE city LIKE 'Ku%' AND country_id >51;
+
+SELECT category_id FROM category WHERE name IN ('Action', 'Comedy', 'Documentary');
+
+SELECT title FROM film WHERE rating='R' OR rating='PG'AND rental_rate >2 AND rental_rate <4.5;
+
+SELECT MAX (length), MIN (length), AVG (length)FROM film;
+
+SELECT COUNT (*) FROM film WHERE length=120;
+
+SELECT COUNT (*) FROM country WHERE country NOT LIKE '% %';
+
+SELECT address_id FROM staff WHERE first_name='Jon' AND last_name='Stephens';
+SELECT * FROM address WHERE address_id IN(4);
+SELECT * FROM address WHERE address_id IN(SELECT address_id FROM staff WHERE first_name='Jon' AND last_name='Stephens');
+
+SELECT title FROM film
+JOIN film_actor ON film.film_id=film_actor.film_id
+JOIN actor ON film_actor.actor_id=actor.actor_id
+WHERE first_name='Zero' AND last_name='Cage';

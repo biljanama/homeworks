@@ -1,0 +1,41 @@
+package Knjizara;
+
+public class Knjiga {
+
+    //Napraviti klasu Knjiga koja ima atribute: naslov, broj strana, i godina izdavanja.
+
+    private String naslov;
+    private int brojStrana;
+    private int godinaIzdavanja;
+
+    public Knjiga(String naslov, int brojStrana, int godinaIzdavanja) {
+        this.naslov = naslov;
+        this.brojStrana = brojStrana;
+        this.godinaIzdavanja = godinaIzdavanja;
+    }
+
+    public String getNaslov() {
+        return naslov;
+    }
+
+    public void setNaslov(String naslov) {
+        this.naslov = naslov;
+    }
+
+    public int getBrojStrana() {
+        return brojStrana;
+    }
+
+    public void setBrojStrana(int brojStrana) {
+        this.brojStrana = brojStrana;
+    }
+
+    public int getGodinaIzdavanja() {
+        return godinaIzdavanja;
+    }
+
+    public void setGodinaIzdavanja(int godinaIzdavanja) {
+        this.godinaIzdavanja = godinaIzdavanja;
+    }
+
+}

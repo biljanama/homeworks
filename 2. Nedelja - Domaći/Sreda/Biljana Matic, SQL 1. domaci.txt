@@ -1,0 +1,3 @@
+SELECT * FROM film WHERE rental_rate = 2.99;
+SELECT * FROM actor WHERE last_name = 'Cruise'OR last_name ='Cruz';
+SELECT title, length FROM film WHERE rating ='PG' OR rating = 'PG-13';
